@@ -4,6 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo</title>
+  <style>
+    body{
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+    }
+    .highlight{
+      background-color: yellow;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+    .hidden{
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Javascript DOM Fun Example</h1>
@@ -18,8 +33,61 @@
 
    <!--Example 2: Traversing the DOM-->
    <section id="example-2">
-    
+    <h2>Traversing the DOM</h2>
+    <ul id="citiesList">
+      <li class="highlight">New York</li>
+      <li>Tokyo</li>
+      <li>Paris</li>
+      <li>London</li>
+    </ul>
+    <button id="highlightFirstCity">highlight First City</button>
    </section>
+   <!--Example 4: Creating and Inserting Elements-->
+   <section id="example-3">
+  <h2>Creating and Inserting Elements</h2>
+  <div id="coffeeOrder">
+    Order: <span id="coffeeType">little</span>
+  </div>
+  <button id="changeOrder">Change Order to Espresso</button>
+</section>
+
+<!--Exampke 4: Event Handeling in DOM-->
+<section id="example-4">
+  <h2>Creating and Inserting Elements</h2>
+  <button id="addNewItem">Add a New Item to the shopping List</button>
+  <ul id="shoppingList">
+    <li>Bread</li>
+    <li>Milk2182</li>
+  </ul>
+</section>
+
+<!--Example 5: Removing DOM Elements-->
+<section>
+  <ul id="taskList">
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+  </ul>
+
+  <button id="removeLastTask">Remove Last Task</button>
+</section>
+
+<!--Example 6: Event Handling in the DOM-->
+<section id="example-6">
+  <h2>Event Handling in the DOM</h2>
+  <button id="clickMeButton">Click Me!</button>
+</section>
+
+<!--Example 7: Event Delegation-->
+<section id="example-7">
+  <h2>Event Delegation</h2>
+  <ul id="teaList">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
   <script defer src="./script.js"></script>
 </body>
 </html>
