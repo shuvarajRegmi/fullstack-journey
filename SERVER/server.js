@@ -4,12 +4,14 @@ const path = require('path')
 
 const port = 3000
 
-const server=http.createServer((req,res)=>{
+const server=http.createServer((req,res)=>
+  {
   path.join(__dirname, req.url==='/'?"index.html":"req.url")
 
   const extName=String(path.extname(filePath)).toLowerCase()
 
-  const mimeTypes={
+  const mimeTypes=
+  {
     '.html':'text/html',
     '.css':'text/css',
     '.js':'text/javascript',
@@ -17,7 +19,7 @@ const server=http.createServer((req,res)=>{
 
   }
 
-  const contentType=mimeTypes[extName] || 'application/octet-streme';
+  const contentType= mimeTypes[extName] || 'application/octet-streme';
 
   fs.readFile(filePath,(err,content)=>{
     if(err){
